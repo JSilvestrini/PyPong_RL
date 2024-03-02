@@ -1,4 +1,4 @@
-# PYPong_RL
+# PyPong_RL
 
 ## Overview
 
