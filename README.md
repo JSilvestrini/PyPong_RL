@@ -38,7 +38,9 @@ This file contains two graphing functions, one of which is unused. The function 
 
 ## Optimizations and Problems
 
-1. As stated earlier in the overview, this model is rather bad at playing and is exploiting rewards. To solve this the following could be done:
+**Problem One**
+
+As stated earlier in the overview, this model is rather bad at playing and is exploiting rewards. To solve this the following could be done:
 
 **Potential Fixes**
 
@@ -46,9 +48,9 @@ This file contains two graphing functions, one of which is unused. The function 
 2. **Change the System of Rewards Entirely**. Add and remove rewards based on the behavior we want to see. This is contrary to what is said above. In order to rework the rewards, weights and frequency need to be thought about. If the RL AI can hit the ball, maybe make it so that it gets more points than earlier, but make it so that there is a larger punishment for sitting still, but only in certain cases. This fix can be found in the **pong.py** file and can be edited based on preference.
 3. **Change the Brute Force Algorithm**. This is also found in the **pong.py** file, but is more subtle. The opponent to the RL AI is an algorithm that will match the velocity of the ball in the vertical direction to ensure that it is always lined upo with the ball. This might be too hard for the RL AI to score against, so to fix it, random moves could be incorporated, and an actual algorithm could be created rather than just velocity matching.
 
----
+**Problem Two**
 
-2. This model also takes lots of time to train, anything that can be done to speed it up would help, so the following could be done:
+This model also takes lots of time to train, anything that can be done to speed it up would help, so the following could be done:
 
 **Potential Fixes**
 
